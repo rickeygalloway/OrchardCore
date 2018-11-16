@@ -1,0 +1,20 @@
+@model IH.OrchardCore.COD10.ViewModels.EditContentAppInstanceFieldViewModel
+@using OrchardCore.ContentManagement.Metadata.Models
+@using OrchardCore.ContentManagement;
+@using IH.OrchardCore.COD10.Settings;
+@using OrchardCore.Liquid;
+@{
+    var settings = Model.PartFieldDefinition.Settings.ToObject<ContentAppInstanceFieldSettings>();
+
+
+}
+
+New or existing widget?<br />
+
+@Model.PartFieldDefinition.Settings <br /><br />
+
+
+
+<div class="row" style="min-height: 700px !important; min-width:600px !important">
+    <iframe style="position:relative; min-height: 700px !important; width:100%; border: none" src="https://csdev01.influencehealth.com/CS/public/v1/modules/instances/config/a54de132-68d6-4825-8a72-98e1850da2a5?&viewName=&noredirect=true&authtoken=544b63d7-0ac6-4aea-988f-fe24d4fe9e23&showAdmin=True"></iframe>
+</div>

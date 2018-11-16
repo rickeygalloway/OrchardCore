@@ -1,0 +1,32 @@
+
+<a name="top"/>
+<p>&nbsp;</p><p>&nbsp;</p>
+<div class="row" style="min-height: 700px !important; min-width:700px !important">
+    <iframe style="position:relative; min-height: 700px !important; width:95%; border: none" src="https://csdev01.influencehealth.com/CS/public/v1/modules/instances/a54de132-68d6-4825-8a72-98e1850da2a5?&viewName=&noredirect=true&authtoken=544b63d7-0ac6-4aea-988f-fe24d4fe9e23"></iframe>
+</div>
+
+<script>
+    Load();
+
+    function Load() {
+
+        var url = "https://csdev01.influencehealth.com/CS/public/v1/modules/instances/a54de132-68d6-4825-8a72-98e1850da2a5?&viewName=&noredirect=true&authtoken=544b63d7-0ac6-4aea-988f-fe24d4fe9e23";
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+
+
+                document.getElementById("ih-content").innerHTML = this.responseText;
+            }
+        };
+        xhttp.open("GET", url, true);
+        xhttp.send();
+    }
+
+</script>
+<div id="ih-content">
+
+
+</div>
+
